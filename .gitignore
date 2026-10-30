@@ -1,35 +1,62 @@
+# ==============================
 # Python
+# ==============================
 __pycache__/
 *.py[cod]
 *.egg-info/
 dist/
 build/
 
-# Virtual environment
+# Virtual environments
 .venv/
+venv/
+env/
 
+# ==============================
 # Environment variables and secrets
+# ==============================
 .env
 .env.*
 !.env.example
 
+# ==============================
 # AI application data
+# ==============================
 chroma_db/
+chroma_db_local/
 *.sqlite
 *.sqlite3
+*.db
 
+# Model cache
+.cache/
+.huggingface/
+
+# ==============================
 # Testing and linting
+# ==============================
 .pytest_cache/
 .ruff_cache/
 .coverage
 htmlcov/
 
+# ==============================
 # Frontend
+# ==============================
 node_modules/
+frontend/node_modules/
 frontend/dist/
+dist/
 
+# ==============================
 # Editors and operating systems
+# ==============================
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# ==============================
+# Logs
+# ==============================
+*.log
